@@ -12,7 +12,8 @@ Zadanie
  2. Zaprojektuj encję JPA Person modelującą właściciela.
     Właściciel powinien posiadać:
      a. unikalny identyfikator (int id)
-     b. imię (String name) c. nazwisko (String surname)
+     b. imię (String name)
+     c. nazwisko (String surname)
  3. Utwórz relacje między właścicielem a samochodem OneToMany
  4. Zaimplementuj klasę DAO umożliwiającą:
      a. tworzenie aut i właścicieli

@@ -11,6 +11,6 @@
         <property name="hibernate.show_sql">true</property>
         <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
 
-        <mapping class="pl.app.peplinski.zadanie.app.Car" />
+        <mapping class="pl.peplinski.zadanie.app.Car" />
     </session-factory>
 </hibernate-configuration>

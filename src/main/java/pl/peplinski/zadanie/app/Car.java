@@ -1,24 +1,34 @@
-package pl.app.peplinski.zadanie.app;
+package pl.peplinski.zadanie.app;
 
+import javax.persistence.*;
 import java.time.LocalDate;
-
+@Entity
 public class Car {
 
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
+
     private String brand;
     private String model;
+    @Enumerated(EnumType.STRING)
     private CarBodyType carBodyType;
+
     private LocalDate productionDate;
     private int age;
 
     public Car() {
     }
+    @ManyToOne
+    @JoinColumn(name = "person_id")
+    private Person person;
 
-    public Car(String brand, String model, CarBodyType carBodyType, LocalDate productionDate) {
-        this.brand = brand;
-        this.model = model;
-        this.carBodyType = carBodyType;
-        this.productionDate = productionDate;
+    public Person getPerson() {
+        return person;
+    }
+
+    public void setPerson(Person person) {
+        this.person = person;
     }
 
     public int getId() {
@@ -71,13 +81,12 @@ public class Car {
 
     @Override
     public String toString() {
-        return "Car{" +
-                "id=" + id +
-                ", brand='" + brand + '\'' +
-                ", model='" + model + '\'' +
-                ", carBodyType=" + carBodyType +
-                ", productionDate=" + productionDate +
-                ", age=" + age +
-                '}';
+        return
+                "id: " + id +
+                " brand: " + brand + '\'' +
+                " model: " + model + '\'' +
+                " carBodyType: " + carBodyType +
+                " productionDate: " + productionDate
+                ;
     }
 }

@@ -1,4 +1,4 @@
-package pl.peplinski.zadanie.app.DAO;
+package pl.peplinski.zadanie.app.DAO.daoCar;
 
 import pl.peplinski.zadanie.app.Car;
 import pl.peplinski.zadanie.app.CarBodyType;
@@ -6,7 +6,7 @@ import pl.peplinski.zadanie.app.CarDAO;
 
 import java.time.LocalDate;
 
-public class AdderCarDao {
+public class AdderCar {
     public static void main(String[] args) {
         Car c1 = new Car();
         c1.setBrand("Ford");

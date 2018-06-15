@@ -2,6 +2,7 @@ package pl.peplinski.zadanie.app;
 
 import javax.persistence.*;
 import java.time.LocalDate;
+
 @Entity
 public class Car {
 
@@ -15,10 +16,12 @@ public class Car {
     private CarBodyType carBodyType;
 
     private LocalDate productionDate;
+    @Transient
     private int age;
 
     public Car() {
     }
+
     @ManyToOne
     @JoinColumn(name = "person_id")
     private Person person;
@@ -83,10 +86,10 @@ public class Car {
     public String toString() {
         return
                 "id: " + id +
-                " brand: " + brand + '\'' +
-                " model: " + model + '\'' +
-                " carBodyType: " + carBodyType +
-                " productionDate: " + productionDate
+                        " brand: " + brand + '\'' +
+                        " model: " + model + '\'' +
+                        " carBodyType: " + carBodyType +
+                        " productionDate: " + productionDate
                 ;
     }
 }

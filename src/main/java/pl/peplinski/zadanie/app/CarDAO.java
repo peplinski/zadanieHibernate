@@ -2,17 +2,16 @@ package pl.peplinski.zadanie.app;
 
 import org.hibernate.Session;
 
-import java.sql.Date;
-import java.time.LocalDate;
 import java.util.List;
 
-public class CarDAO { public static void addDog(Car car) {
-    Session session = HibernateFactory.getSessionFactory().openSession();
-    session.beginTransaction();
-    session.save(car);
-    session.getTransaction().commit();
-    session.close();
-}
+public class CarDAO {
+    public static void addCar(Car car) {
+        Session session = HibernateFactory.getSessionFactory().openSession();
+        session.beginTransaction();
+        session.save(car);
+        session.getTransaction().commit();
+        session.close();
+    }
 
     public static Car getCar(Long id) {
         Session session = HibernateFactory.getSessionFactory().openSession();
@@ -22,15 +21,15 @@ public class CarDAO { public static void addDog(Car car) {
         return car;
     }
 
-    public static List<Car> readAll(){
+    public static List<Car> readAll() {
         Session session = HibernateFactory.getSessionFactory().openSession();
         List<Car> cars = session.createQuery("FROM car").list();
         session.close();
-        System.out.println("Found " + cars.size()+ " Cars");
+        System.out.println("Found " + cars.size() + " Cars");
         return cars;
     }
 
-    public static void deleteCar(Long carId){
+    public static void deleteCar(Long carId) {
         Session session = HibernateFactory.getSessionFactory().openSession();
         session.beginTransaction();
         Car car = getCar(carId);
@@ -39,7 +38,7 @@ public class CarDAO { public static void addDog(Car car) {
         session.close();
     }
 
-    public static void updateCar(Long carId, Car newCar){
+    public static void updateCar(Long carId, Car newCar) {
         Session session = HibernateFactory.getSessionFactory().openSession();
         session.beginTransaction();
         Car car = getCar(carId);

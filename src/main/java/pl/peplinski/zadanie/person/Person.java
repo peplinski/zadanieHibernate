@@ -1,4 +1,6 @@
-package pl.peplinski.zadanie.app;
+package pl.peplinski.zadanie.person;
+
+import pl.peplinski.zadanie.car.Car;
 
 import javax.persistence.*;
 import java.util.Set;

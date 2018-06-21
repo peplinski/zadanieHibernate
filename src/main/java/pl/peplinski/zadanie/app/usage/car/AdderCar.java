@@ -1,8 +1,8 @@
-package pl.peplinski.zadanie.app.DAO.daoCar;
+package pl.peplinski.zadanie.app.usage.car;
 
-import pl.peplinski.zadanie.app.Car;
-import pl.peplinski.zadanie.app.CarBodyType;
-import pl.peplinski.zadanie.app.CarDAO;
+import pl.peplinski.zadanie.car.Car;
+import pl.peplinski.zadanie.car.CarBodyType;
+import pl.peplinski.zadanie.car.CarDAO;
 
 import java.time.LocalDate;
 

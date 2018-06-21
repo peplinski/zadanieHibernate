@@ -1,4 +1,4 @@
-package pl.peplinski.zadanie.app;
+package pl.peplinski.zadanie.car;
 
 public enum CarBodyType {
     SEDAN, COMBI, CABRIO

@@ -12,7 +12,7 @@
         <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
         <property name="hibernate.hbm2ddl.auto">create</property>
 
-        <mapping class="pl.peplinski.zadanie.app.Car" />
-        <mapping class="pl.peplinski.zadanie.app.Person" />
+        <mapping class="pl.peplinski.zadanie.car.Car" />
+        <mapping class="pl.peplinski.zadanie.person.Person" />
     </session-factory>
 </hibernate-configuration>

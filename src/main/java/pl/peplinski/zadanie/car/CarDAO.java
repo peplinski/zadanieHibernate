@@ -1,6 +1,7 @@
-package pl.peplinski.zadanie.app;
+package pl.peplinski.zadanie.car;
 
 import org.hibernate.Session;
+import pl.peplinski.zadanie.util.HibernateFactory;
 
 import java.util.List;
 

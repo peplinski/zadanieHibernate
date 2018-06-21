@@ -1,4 +1,6 @@
-package pl.peplinski.zadanie.app;
+package pl.peplinski.zadanie.car;
+
+import pl.peplinski.zadanie.person.Person;
 
 import javax.persistence.*;
 import java.time.LocalDate;

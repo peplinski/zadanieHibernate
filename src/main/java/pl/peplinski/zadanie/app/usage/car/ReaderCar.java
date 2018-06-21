@@ -1,4 +1,4 @@
-package pl.peplinski.zadanie.app.DAO.daoCar;
+package pl.peplinski.zadanie.app.usage.car;
 
 
 class ReaderCar {

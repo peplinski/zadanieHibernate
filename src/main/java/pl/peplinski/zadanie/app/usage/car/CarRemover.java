@@ -1,6 +1,6 @@
-package pl.peplinski.zadanie.app.DAO.daoCar;
+package pl.peplinski.zadanie.app.usage.car;
 
-import pl.peplinski.zadanie.app.CarDAO;
+import pl.peplinski.zadanie.car.CarDAO;
 
 public class CarRemover {
     public static void main(String[] args) {
